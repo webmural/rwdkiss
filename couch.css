@@ -1,38 +1,86 @@
 html {
-  font-size: max(5ex, 8vmax);
+  font-size: max(3ch, 3vmax + 3vmin);
   font-family: sans-serif;
-  line-height: 1.618;
+  line-height: 2;
 }
 
 body {
-  display: flex;
-  flex-flow: column;
   margin: auto;
+  overflow-wrap: anywhere;
 }
 
 article {
-  align-items: flex-end;
-  box-sizing: border-box;
+  align-items: center;
+  contain: content;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  min-height: 100vh;
-  padding: 1em;
+  flex-flow: column;
+  justify-content: center;
 }
 
 :any-link { text-decoration-style: dotted }
 :focus { text-decoration-style: solid }
 :hover { text-decoration-style: double }
 
-h1 { flex-basis: 100% }
-u { all: unset }
-p { flex-basis: 50% }
+a {
+  display: inline-flex;
+  padding: 1vh 1vw;
+}
+
+h1 { 
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  font-size: 1.236em;
+  justify-content: center;
+  margin: auto;
+  min-height: 100vh;
+}
+
+i {
+  font: inherit;
+  text-shadow: 0 -1vh 0, 0 -2vh 0, 0 -3vh 0;
+}
+
+p {
+  display: flex;
+  flex-flow: column;
+  margin: 1ch;
+}
+
+p:last-child {
+  margin-block: 3em;
+}
+
+abbr {
+  all: unset;
+  font-size: 2.618em;
+}
+
+u {
+  all: unset;
+  font-size: 3.618em;
+}
+
+s {
+  text-decoration-style: dotted;
+}
 
 b {
   font-weight: 500;
-  box-shadow: 0 1ex 0 0;
+  text-decoration: dotted overline;
 }
 
-.wavy { text-decoration-style: wavy }
-.rove { text-decoration-line: overline }
-.bull { text-decoration-style: double }
+samp {
+  font-family: unset;
+  font-style: normal;
+}
+
+@media (orientation: portrait) {
+  h1 {
+    writing-mode: sideways-rl;
+  }
+
+  i {
+    text-shadow: 1vw 0 0, 2vw 0 0, 3vw 0 0;
+  }
+}

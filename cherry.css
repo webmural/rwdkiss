@@ -1,21 +1,22 @@
 ::selection {
-  background: black;
-  color: hotpink;
+  background: purple;
+  color: plum;
 }
 
 :root {
-  color: seashell;
-  background: mediumvioletred;
+  color: #313;
+  background-color: violet;
+  background-image: conic-gradient(violet, deeppink, deeppink, violet);
 }
 
 :any-link {
-  color: mistyrose;
+  color: #313;
+  background-color: violet;
+  background-image: conic-gradient(plum, violet, transparent, transparent);
 }
 
 :focus {
-  filter: invert(100%);
+  background: transparent;
   outline: thick dotted;
-  text-shadow:
-    1vw 0vh 0,
-    -1vw 0vh 0;
+  box-shadow: 0 0 0 1vmax;
 }
