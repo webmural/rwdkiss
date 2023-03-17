@@ -1,5 +1,3 @@
-# [formula](index.html)
+## [rwd*kiss*](https://webmural.com/rwdkiss)
 
-* [MathML](https://mdn.io/mathml)
-* [HTML](https://webmural.com/html)
-* [CSS](https://webmural.com/css)
+[dub future](https://webmural.com/fwdkiss)
